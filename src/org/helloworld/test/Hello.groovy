@@ -2,7 +2,7 @@ package org.helloworld;
 
 class SayHello implements Serializable
 {
-  String messageToSay = "Default Hello World Message"
+  String messageToSay = "Default Hello World Message";
 
   Hello()
   {
