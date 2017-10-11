@@ -13,7 +13,7 @@ class Hello implements Serializable
 
   void SayHello()
   {
-    println(messageToSay);
+    System.out.print(messageToSay);
   }
 
 }
