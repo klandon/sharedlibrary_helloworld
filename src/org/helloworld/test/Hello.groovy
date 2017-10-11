@@ -11,7 +11,7 @@ class Hello implements Serializable
     this.messageToSay = newMessage;
   }
 
-  SayHello()
+  void SayHello()
   {
     println(messageToSay);
   }
