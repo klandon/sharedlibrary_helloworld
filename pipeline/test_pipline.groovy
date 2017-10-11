@@ -12,11 +12,6 @@ pipeline
     }
 
 
-    parameters
-    {
-        string(name: 'LoggingBucket', defaultValue: 'ln-app-jenkins.dev/logs', description: 'bucket to store logs')
-    }
-
     options
     {
       buildDiscarder(logRotator(numToKeepStr: '30'))
