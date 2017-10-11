@@ -1,13 +1,20 @@
 #!groovy
 @Library('helloworld@master') _
 
+
 def hw = new org.helloworld.test.Hello("some message")
 
 pipeline
 {
     agent
     {
-        node any
+        node 'master'
+    }
+
+
+    parameters
+    {
+        string(name: 'LoggingBucket', defaultValue: 'ln-app-jenkins.dev/logs', description: 'bucket to store logs')
     }
 
     options
@@ -22,7 +29,8 @@ pipeline
             {
               script
               {
-                hw.SayHello();
+                println(hw.messageToSay);
+                println(env.BUILD_URL);
               }
             }
         }
