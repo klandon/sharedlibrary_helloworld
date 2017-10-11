@@ -1,6 +1,7 @@
 #!groovy
 @Library('helloworld@master') _
 
+def hw = new org.helloworld.test.Hello();
 
 pipeline
 {
@@ -19,8 +20,10 @@ pipeline
         {
           steps
             {
-
-
+              script
+              {
+                hw.SayHello();
+              }
             }
         }
 
