@@ -6,7 +6,7 @@ class Hello implements Serializable
   String messageToSay = 'Default Hello World Message';
 
 
-  Hello(string newMessage)
+  Hello(String newMessage)
   {
     this.messageToSay = newMessage;
   }
