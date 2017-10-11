@@ -1,8 +1,9 @@
-package org.helloworld;
+package org.helloworld.test;
+import java.util.*;
 
 class SayHello implements Serializable
 {
-  String messageToSay = "Default Hello World Message";
+  String messageToSay = 'Default Hello World Message';
 
 
   Hello(string newMessage)

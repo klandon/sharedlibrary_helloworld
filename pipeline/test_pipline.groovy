@@ -1,7 +1,7 @@
 #!groovy
 @Library('helloworld@master') _
 
-def hw = new org.helloworld.test.Hello("some message");
+def hw = new org.helloworld.test.Hello("some message")
 
 pipeline
 {
